@@ -1,7 +1,8 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "proxy":"http://localhost:5000",
+  "homepage": "https://zongyanggong.github.io/portfolio",
+  "proxy": "http://localhost:5000",
   "private": true,
   "dependencies": {
     "@craco/craco": "^7.1.0",
@@ -25,6 +26,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "deploy": "gh-pages -d build",
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
@@ -47,5 +49,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
   }
 }
