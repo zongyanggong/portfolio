@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Agustina Regular";
+  src: url("./assets/fonts/Agustina.woff");
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #080808;
+  color: #fff;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.link {
+  padding: 15px;
+  color: #868e96;
+  text-decoration: none;
+  font-family: "Montserrat-Light";
+}
+
+.link:hover {
+  text-decoration: underline;
+  color: #fff;
+  text-decoration-color: #ff004f;
+}
