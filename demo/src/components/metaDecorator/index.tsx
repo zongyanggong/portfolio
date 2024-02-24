@@ -1,5 +1,4 @@
 import { Helmet } from "react-helmet";
-import { useLocation } from "react-router-dom";
 
 interface propsFace {
   title?: string;
