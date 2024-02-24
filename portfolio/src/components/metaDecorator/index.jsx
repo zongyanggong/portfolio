@@ -1,13 +1,7 @@
 import { Helmet } from "react-helmet";
 import { useLocation } from "react-router-dom";
 
-interface propsFace {
-  title?: string;
-  description?: string;
-  image?: string;
-}
-
-const MetaDecorator: React.FC<propsFace> = (props) => {
+const MetaDecorator = (props) => {
   const { pathname } = useLocation();
   const { origin } = window.location;
   const metaTitle =
