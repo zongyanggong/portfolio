@@ -7,7 +7,7 @@ const cors = require("cors");
 
 const rootpath = path.join(__dirname, "..");
 // app.use(express.static(path.join(rootpath, "portfolio/build")));
-app.use(express.static(path.join(rootpath, "demo/build")));
+app.use(express.static(path.join(rootpath, "demo/dist")));
 
 var corsOptions = {
   origin: "http://localhost:3000",

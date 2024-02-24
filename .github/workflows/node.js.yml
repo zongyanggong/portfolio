@@ -30,6 +30,7 @@ jobs:
           cd demo
           npm install
           npm run build
+          npm server
           cd ..
       - run: |
           cd server
