@@ -2,18 +2,18 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
-// import MetaDecorator from "./components/metaDecorator";
+import MetaDecorator from "./components/metaDecorator";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
-      {/* <MetaDecorator
+      <MetaDecorator
         title={"测试标题1"}
         // description={preview.description}
         description={"测试内容"}
-      /> */}
+      />
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
