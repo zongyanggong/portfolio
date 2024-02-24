@@ -7,7 +7,7 @@ import Footer from "./components/footer";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Weather from "./components/weather";
-import MetaDecorator from "./components/metaDecorator";
+// import MetaDecorator from "./components/metaDecorator";
 
 function App() {
   return (
