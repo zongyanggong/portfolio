@@ -7,10 +7,16 @@ import Footer from "./components/footer";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Weather from "./components/weather";
+import MetaDecorator from "./components/metaDecorator";
 
 function App() {
   return (
     <div className="App" style={{ position: "relative" }}>
+      <MetaDecorator
+        title={"测试标题"}
+        // description={preview.description}
+        description={"测试内容"}
+      />
       <ToastContainer />
       <Hero />
       <Skill />
