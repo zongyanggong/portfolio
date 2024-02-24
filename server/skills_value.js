@@ -1,7 +1,7 @@
 const skillsValue = [
   {
     id: 1,
-    skillName: "Frontend Developer",
+    skillName: "Frontend Developer test",
     values: [
       {
         skillTitle: "HTML5",
