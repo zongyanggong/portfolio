@@ -53,5 +53,11 @@
   },
   "devDependencies": {
     "gh-pages": "^6.1.1"
+  },
+  "reactSnap": {
+    "puppeteerArgs": [
+      "--no-sandbox",
+      "--disable-setuid-sandbox"
+    ]
   }
 }
