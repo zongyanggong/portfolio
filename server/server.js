@@ -5,7 +5,8 @@ const skillValues = require("./skills_value");
 const cors = require("cors");
 
 const rootpath = path.join(__dirname, "..");
-app.use(express.static(path.join(rootpath, "portfolio/build")));
+// app.use(express.static(path.join(rootpath, "portfolio/build")));
+app.use(express.static(path.join(rootpath, "demo/build")));
 
 var corsOptions = {
   origin: "http://localhost:3000",
