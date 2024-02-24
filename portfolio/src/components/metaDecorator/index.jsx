@@ -21,6 +21,7 @@ const MetaDecorator = ({ title, description }) => {
       <meta property="og:description" content={metaDescription} />
       <meta property="og:image" content={metaImage} />
       {/* <meta property="og:url" content={metaUrl} /> */}
+      <meta property="og:url" content={"http://http://138.197.44.229/"} />
       <meta property="og:type" content="website" />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={metaTitle} />

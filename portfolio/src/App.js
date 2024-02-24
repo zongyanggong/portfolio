@@ -12,11 +12,11 @@ import MetaDecorator from "./components/metaDecorator";
 function App() {
   return (
     <div className="App" style={{ position: "relative" }}>
-      <MetaDecorator
+      {/* <MetaDecorator
         title={"测试标题"}
         // description={preview.description}
         description={"测试内容"}
-      />
+      /> */}
       <ToastContainer />
       <Hero />
       <Skill />
