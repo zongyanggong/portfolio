@@ -27,7 +27,7 @@ jobs:
           cache: "npm"
           cache-dependency-path: portfolio/package-lock.json
       - run: |
-          cd demo
+          cd vitedemo
           npm install
           npm run build
           cd ..
@@ -38,6 +38,3 @@ jobs:
           pm2 start 0
           pm2 save
           sudo service nginx restart
-          cd ..
-          cd demo
-          npm run dev
