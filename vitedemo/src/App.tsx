@@ -5,7 +5,7 @@ import "./App.css";
 function App() {
   const [count, setCount] = useState(0);
   const [title, setTitle] = useState(
-    "大声 - 大聲 - Dasheng 自由体面美的华语精神文化生活123"
+    "大声 - 大聲 - Dasheng 自由体面美的华语精神文化生活123456"
   );
   const metaTitle = "大声 - 大聲 - Dasheng 自由体面美的华语精神文化生活123";
   const metaDescription =
@@ -14,15 +14,16 @@ function App() {
     "https://cascadevalleydesigns.com/wp-content/uploads/2019/09/How-to-Fix-Facebook-Link-Preview.png";
 
   useEffect(() => {
-    fetch("http://localhost:5000/skills")
-      .then((res) => res.json()) // Assuming the response is JSON. This converts it to a JavaScript object.
-      .then((data) => {
-        console.log(data); // Log the data to see the response from your backend.
-        setTitle(data.skills[0].skillName);
-      })
-      .catch((error) => {
-        console.error("Error fetching data: ", error); // Catch and log any errors.
-      });
+    // fetch("http://localhost:5000/skills")
+    //   .then((res) => res.json()) // Assuming the response is JSON. This converts it to a JavaScript object.
+    //   .then((data) => {
+    //     console.log(data); // Log the data to see the response from your backend.
+    //     setTitle(data.skills[0].skillName);
+    //   })
+    //   .catch((error) => {
+    //     console.error("Error fetching data: ", error); // Catch and log any errors.
+    //   });
+    setTitle("测试标题");
   }, []); // Don't forget the closing bracket for the dependency array.
 
   return (
