@@ -4,9 +4,9 @@ import "./App.css";
 
 function App() {
   const [count, setCount] = useState(0);
-  const metaTitle = "大声 - 大聲 - Dasheng 自由体面美的华语精神文化生活";
+  const metaTitle = "大声 - 大聲 - Dasheng 自由体面美的华语精神文化生活123";
   const metaDescription =
-    "大声一个自由创作、分享和交流的内容社区，致力于向全球华语受众提供自由表达空间、新闻策展内容、共创生态环境，以及无审查的图书和电影资讯，构建自由、丰富、有尊严的华语精神生活，维护体面与美的华语文化圈层。";
+    "123大声一个自由创作、分享和交流的内容社区，致力于向全球华语受众提供自由表达空间、新闻策展内容、共创生态环境，以及无审查的图书和电影资讯，构建自由、丰富、有尊严的华语精神生活，维护体面与美的华语文化圈层。";
   const metaImage =
     "https://cascadevalleydesigns.com/wp-content/uploads/2019/09/How-to-Fix-Facebook-Link-Preview.png";
 
