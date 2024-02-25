@@ -27,7 +27,7 @@ function App() {
         <meta name="twitter:description" content={metaDescription} />
         <meta name="twitter:image" content={metaImage} />
       </Helmet>
-      <h1>Vite + React + zongyang123</h1>
+      <h1>Vite + React + zongyang hi</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
