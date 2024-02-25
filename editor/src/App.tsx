@@ -1,69 +1,49 @@
-import React, { useState } from "react";
-import { Helmet } from "react-helmet";
-import { Router, RouteComponentProps, Link } from "@reach/router";
-
-import "normalize.css";
-import "sakura.css";
+import { useState } from "react";
 import "./App.css";
+import { Helmet } from "react-helmet";
+import reactLogo from "./assets/react.svg";
 
-function Counter(props: RouteComponentProps) {
+export default function Index() {
   const [count, setCount] = useState(0);
+  const metaTitle = "大声 - 大聲 - Dasheng 自由体面美的华语精神文化生活";
+  const metaDescription =
+    "大声一个自由创作、分享和交流的内容社区，致力于向全球华语受众提供自由表达空间、新闻策展内容、共创生态环境，以及无审查的图书和电影资讯，构建自由、丰富、有尊严的华语精神生活，维护体面与美的华语文化圈层。";
+  const metaImage =
+    "https://cascadevalleydesigns.com/wp-content/uploads/2019/09/How-to-Fix-Facebook-Link-Preview.png";
 
   return (
-    <div className="App">
+    <>
       <Helmet>
-        <meta charSet="utf-8" />
-        <title>My React SEO - Counter</title>
-        <link
-          rel="canonical"
-          href="https://react-seo-demo-dunghd.vercel.app/"
-        />
-        <meta
-          name="description"
-          content="Simple React SEO Application for counter"
-        />
+        <title>{metaTitle}</title>
+        {/* <meta name="title" content={metaTitle} /> */}
+        <meta name="description" content={metaDescription} />
+        <meta property="og:title" content={metaTitle} />
+        <meta property="og:description" content={metaDescription} />
+        <meta property="og:image" content={metaImage} />
+        {/* <meta property="og:url" content={metaUrl} /> */}
+        <meta property="og:url" content={"http://http://138.197.44.229/"} />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={metaTitle} />
+        <meta name="twitter:description" content={metaDescription} />
+        <meta name="twitter:image" content={metaImage} />
       </Helmet>
-      <h3>Simple React SEO Demo - Counter page</h3>
-      <header className="App-header">
+      <div>
+        <img src={reactLogo} />
+      </div>
+      <h1>Vite + React zngyangssg</h1>
+      <h2>vite-react-ssg single-page</h2>
+      <div className="card">
+        <button onClick={() => setCount((count) => count + 1)}>
+          count is {count}
+        </button>
         <p>
-          <button onClick={() => setCount((count) => count + 1)}>
-            count is: {count}
-          </button>
+          Edit <code>src/App.tsx</code> and save to test HMR
         </p>
-        <p>Simple counter</p>
-        <Link to="/">Back to homepage</Link>
-      </header>
-    </div>
+      </div>
+      <p className="read-the-docs">
+        Click on the Vite and React logos to learn more
+      </p>
+    </>
   );
 }
-
-function Home(props: RouteComponentProps) {
-  return (
-    <div className="App">
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>My React SEO - Homepage</title>
-        <link
-          rel="canonical"
-          href="https://react-seo-demo-dunghd.vercel.app/"
-        />
-        <meta name="description" content="Simple React SEO Application" />
-      </Helmet>
-      <h3>Simple React SEO Demo</h3>
-      <header className="App-header">
-        <Link to="/counter">Go to counter</Link>
-      </header>
-    </div>
-  );
-}
-
-function App() {
-  return (
-    <Router>
-      <Home path="/" />
-      <Counter path="counter" />
-    </Router>
-  );
-}
-
-export default App;

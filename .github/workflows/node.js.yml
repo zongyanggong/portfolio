@@ -27,8 +27,8 @@ jobs:
           cache: "npm"
           cache-dependency-path: portfolio/package-lock.json
       - run: |
-          cd vitedemo
-          npm install --legacy-peer-deps
+          cd editor
+          npm install
           npm run build
           cd ..
       - run: |

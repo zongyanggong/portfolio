@@ -7,10 +7,10 @@ const cors = require("cors");
 
 const rootpath = path.join(__dirname, "..");
 // app.use(express.static(path.join(rootpath, "portfolio/build")));
-app.use(express.static(path.join(rootpath, "vitedemo/dist")));
+app.use(express.static(path.join(rootpath, "editor/dist")));
 
 var corsOptions = {
-  origin: "http://localhost:3000",
+  origin: "http://localhost:5173",
 };
 
 app.use(cors(corsOptions));
