@@ -7,7 +7,7 @@ import Footer from "./components/footer";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Weather from "./components/weather";
-import MetaDecorator from "./components/metaDecorator";
+// import MetaDecorator from "./components/metaDecorator";
 import { useEffect } from "react";
 
 function App() {
@@ -32,7 +32,7 @@ function App() {
 
     const ogUrl = document.createElement("meta");
     ogUrl.setAttribute("property", "og:url");
-    ogUrl.content = "http://http://138.197.44.229";
+    ogUrl.content = "http://138.197.44.229";
     document.head.appendChild(ogUrl);
   }, []);
   return (
