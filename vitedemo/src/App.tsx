@@ -14,7 +14,7 @@ function App() {
     "https://cascadevalleydesigns.com/wp-content/uploads/2019/09/How-to-Fix-Facebook-Link-Preview.png";
 
   useEffect(() => {
-    fetch("http://localhost:5000/skills")
+    fetch("/skills")
       .then((res) => res.json()) // Assuming the response is JSON. This converts it to a JavaScript object.
       .then((data) => {
         console.log(data); // Log the data to see the response from your backend.
